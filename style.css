@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/bg-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: var(--Violet);
+  min-height: 100vh;
+  display: grid;
+  padding: 3.2rem 3.4rem;
+  grid-template-rows: max-content;
+  max-width: 59rem;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+header {
+  margin-bottom: 6rem;
+}
+
+header img {
+  height: 3.2rem;
+}
+
+main {
+  margin-bottom: 6.4rem;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 5.8rem;
+}
+
+main div {
+  text-align: center;
+}
+
+main div h1 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+main div p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: white;
+  margin-bottom: 2.4rem;
+}
+
+main div button {
+  width: 100%;
+  max-width: 20rem;
+  height: 4rem;
+  border: 0;
+  background: #ffffff;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.21);
+  border-radius: 2.8rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--Violet);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+main div button:hover {
+  background: var(--SoftMagenta);
+  color: white;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  gap: 1.2rem;
+}
+
+footer a {
+  border: 1px solid white;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a ion-icon {
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  border-color: var(--SoftMagenta);
+}
+
+footer a:hover ion-icon {
+  color: var(--SoftMagenta);
+}
+
+@media screen and (min-width: 1290px) {
+  body {
+    padding: 5.2rem 8rem 4rem 7rem;
+    background-image: url("./images/bg-desktop.svg");
+    background-position: left;
+    max-width: 100%;
+  }
+
+  header {
+    margin-bottom: 8.7rem;
+  }
+
+  header img {
+    height: 5.4rem;
+  }
+
+  main {
+    display: flex;
+    gap: 5.8rem;
+    margin-bottom: 2.1rem;
+  }
+
+  main img {
+    margin: 0;
+  }
+
+  main div {
+    text-align: left;
+    padding-top: 4.2rem;
+  }
+
+  main div h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  main div p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  main div button {
+    height: 5.6rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  footer {
+    justify-content: right;
+    gap: 1.6rem;
+  }
+
+  footer a {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  footer a ion-icon {
+    font-size: 2rem;
+  }
+}
